@@ -1,0 +1,13 @@
+Gri33415, Griffiths, 2015, Gold,35,40000
+Smi22316, Smith, 2016, Silver,3,7500
+Mia56213, Miah, 2013, Platinum,140,165000
+All78915, Allen, 2015, Platinum,120,145000
+Hug91714, Huggett, 2014, Platinum,150,50000
+Sel77617, Selby, 2017, Gold,40,45000
+San55614, Santus, 2014, Silver,12,30000
+Lee44213, Leewah, 2013, Silver,15,37500
+Van88023,Vanpraet,2023,Silver,13,65000
+Ank52023,Ankunda ,2023,Silver,24,60000
+Ger19023,Gerald,2023,Silver,13,65000
+Chi99023,Chiaz,2023,Silver,24,60000
+Beb20023,Bebe,2023,Silver,13,32500
