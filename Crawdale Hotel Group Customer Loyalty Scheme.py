@@ -88,8 +88,9 @@ while True:
                     member_data = line.split(',')
                     if member_data[0] == member_id:
                         old_nights_booked = int(member_data[4])
+                        current_points = int(member_data[5])
                         member_data[4] = str(old_nights_booked + nights_booked)
-                        member_data[5] = str((old_nights_booked + nights_booked) * 2500) + "\n"
+                        member_data[5] = str(current_points + nights_booked * 2500) + "\n"
                         line = ",".join(member_data)
                     file.write(line)
 
@@ -102,6 +103,8 @@ while True:
             hotelfile = "SampleData2017.txt"
             with open(hotelfile, "r") as file:
                 lines = file.readlines()
+
+            redemption_successful = False
             with open(hotelfile, "w") as file:
                 for line in lines:
                     member_data = line.split(',')
@@ -113,9 +116,11 @@ while True:
                             continue
                         member_data[5] = str(current_points - points_to_redeem) + "\n"
                         line = ",".join(member_data)
+                        redemption_successful = True
                     file.write(line)
 
-            print(f"{points_to_redeem} points have been redeemed for member ID: {member_id}.")
+            if redemption_successful:
+                print(f"{points_to_redeem} points have been redeemed for member ID: {member_id}.")
             time.sleep(2)
 
     # Option for Display
